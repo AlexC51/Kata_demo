@@ -24,20 +24,14 @@ var b = new Point (4,2);
 
 
 
-  function distanceBetweenPoints(a, b) {
-    var XD;
-    var YD;
-    if (a.x > b.x )
-    {XD = (a.x - b.x)}
-    else XD = (b.x-a.x)
 
-    if (a.y > b.y )
-    {YD = (a.y - b.y)}
-    else YD = (b.y-a.y)
+const distanceBetweenPoints = (a, b) => {
     
-    
-    return Math.pow((XD*XD+YD*YD),0.5)
-  }
+	const XD = a.x > b.x ? (a.x - b.x) : (b.x-a.x)
+	const YD = a.y > b.y ? (a.y - b.y) : (b.y-a.y)
+	
+	return Math.pow((XD*XD+YD*YD),0.5)
+}
 
 var dist = 0
 dist = distanceBetweenPoints (a,b);
