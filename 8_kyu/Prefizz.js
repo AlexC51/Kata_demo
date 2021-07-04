@@ -9,6 +9,6 @@ function preFizz(n) {
     return a;
     }
 
-    var C = preFizz (20);
+    var C = preFizz (5);
     C.forEach(element => console.log(element));
 
